@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6f7ff; /* Soft light blue background */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.image-section {
+  width: 45%; /* Decrease width of the image section */
+  background-image: url(""); /* Example image URL */
+  background-size: cover; /* Make the background cover the area */
+  background-position: center; /* Center the image */
+  height: 300px; /* Decrease height of the image section */
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.form-section {
+  width: 30%; /* Decrease width of the form */
+  background-color: #ffffff; /* White background for the form */
+  padding: 20px; /* Decrease padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #333333; /* Dark gray */
+}
+
+p {
+  text-align: center;
+  color: #666666; /* Lighter gray */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  color: #4f86f7; /* Soft blue color for labels */
+}
+
+input {
+  padding: 8px; /* Reduce padding inside inputs */
+  margin-bottom: 12px; /* Decrease space between fields */
+  border: 1px solid #cccccc; /* Light gray border */
+  border-radius: 5px;
+  font-size: 14px; /* Reduce font size inside inputs */
+}
+
+/* Password mismatch styling */
+/* Password mismatch styling */
+input#password:valid {
+  border: 2px solid #4caf50; /* Green border when password is valid */
+}
+
+input#password:invalid {
+  border: 2px solid red; /* Red border when password is invalid */
+}
+
+input#confirmpassword:valid {
+  border: 2px solid #4caf50; /* Green border when passwords match */
+}
+
+input#confirmpassword:invalid {
+  border: 2px solid red; /* Red border when the password doesn't match */
+}
+
+button {
+  background-color: #ff6600; /* Orange button */
+  color: white;
+  padding: 8px; /* Reduce button padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; /* Reduce button font size */
+}
+
+button:hover {
+  background-color: #cc5200; /* Darker orange on hover */
+}
